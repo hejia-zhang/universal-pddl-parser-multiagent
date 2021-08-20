@@ -279,5 +279,5 @@ if __name__ == "__main__":
 
     domainPddl = getDomainString(numTables, addMoveAgentAction)
 
-    with open("table_domain" + str(numTables) + ".pddl", 'w') as f:
+    with open("table_domain_new" + str(numTables) + ".pddl", 'w') as f:
         f.write(domainPddl)
