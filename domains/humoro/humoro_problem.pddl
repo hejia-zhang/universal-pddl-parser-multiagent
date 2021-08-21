@@ -1,0 +1,46 @@
+(define (problem set_table) (:domain humoro_table)
+(:objects
+	a0 - agent
+	a1 - agent
+    chair1 - location
+    chair2 - location
+)
+(:init
+    (agent-free a0)
+    (agent-free a1)
+    (agent-at a0 table)
+    (agent-at a1 table)
+    (object-available plate_blue)
+    (object-available plate_pink)
+    (object-available plate_red)
+    (object-available plate_green)
+    (object-available cup_blue)
+    (object-available cup_pink)
+    (object-available cup_red)
+    (object-available cup_green)
+    (object-available jug)
+    (on plate_blue big_shelf)
+    (on plate_pink big_shelf)
+    (on plate_red big_shelf)
+    (on plate_green big_shelf)
+    (on bowl big_shelf)
+    (on cup_red small_shelf)
+    (on cup_green small_shelf)
+    (on cup_blue small_shelf)
+    (on cup_pink small_shelf)
+    (on jug small_shelf)
+)
+
+(:goal (and
+	(on plate_blue table)
+    (on plate_pink table)
+    (on plate_green table)
+    (on plate_red table)
+    (on cup_blue table)
+    (on cup_pink table)
+    (on cup_green table)
+    (on cup_red table)
+    (on jug table)
+    (on bowl big_shelf)
+))
+)
